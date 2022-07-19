@@ -1,0 +1,37 @@
+.logo {
+  font-size: 24px;
+  font-weight: 430;
+}
+
+.logo,
+.main-menu,
+.checkout {
+  align-items: center;
+}
+
+.checkout {
+  display: flex;
+
+  i {
+    display: inline;
+  }
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+li {
+  display: inline-block;
+  padding: 0 2em;
+}
+
+.is-active {
+  background: rgba(0, 0, 0, 0.74);
+  color: white;
+  padding: 0.3em 1em;
+}

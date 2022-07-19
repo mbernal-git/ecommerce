@@ -1,0 +1,36 @@
+<div *ngIf="product; else elseBlock" class="section-break margin-top">
+  <div class="breadcrumbs">
+    <a [routerLink]="['/']"><i class="material-icons" style="font-size: 14px">home</i> Home</a> > <a [routerLink]="['/products']">Products</a> > <span class="gray">{{product.name}}</span>
+  </div>
+  <div class="two-cols margin-bottom4">
+    <div class="product__image">
+      <img src="{{product.image}}" alt="{{product.title}}">
+    </div>
+    <div class="product-info flexbox column flex">
+      <h1 class="product__name flex2 flexbox align-items-end">{{product.name}}</h1>
+      <p class="product__brand">By {{product.brand}}</p>
+      <p class="price-label flexbox flex align-items-end">Price</p>
+      <p class="product__price flexbox flex">{{ product.price | currency }}</p>
+      <div class="cta">
+        <a (click)="addToCart(product)">Add to cart</a>
+      </div>
+
+      <div class="modal hide">
+        <div>
+          <div class="t-center" style="margin-top: 6%">
+            <p><strong>{{product.name}}</strong></p>
+            <p>has been added to the cart.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <h4 class="margin-bottom2">Description</h4>
+  <p>{{ product.description }}</p>
+
+</div>
+
+<ng-template #elseBlock>
+  <h2 class="heading section-break">No product found.</h2>
+</ng-template>

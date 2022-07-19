@@ -1,0 +1,40 @@
+.products-div {
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.product {
+  background: none;
+  padding: 1em 1em 4em 1em;
+  width: 25%;
+  
+
+  &__image {
+    img {
+      min-width: 100%;
+    }
+  }
+
+  &__name {  
+    background: none;
+    flex: 4;
+  }
+
+  &__price {
+    flex: 1;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 540px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+}
+
+.product img:hover, 
+.product .product__name:hover,
+.product .product__price:hover {
+  cursor: pointer;
+}

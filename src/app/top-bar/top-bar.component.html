@@ -1,0 +1,13 @@
+<p class="logo"><a [routerLink]="['/']">My Store</a></p>
+  <ul class="main-menu">
+    <li><a [routerLink]="['/products']" routerLinkActive="is-active" >Products</a></li>
+    <li><a [routerLink]="['/about']" routerLinkActive="is-active" >About</a></li>
+    <li><a [routerLink]="['/contact']" routerLinkActive="is-active" >Contact</a></li>
+  </ul>
+<div class="checkout">
+  <a [routerLink]="['/cart']" routerLinkActive="is-active">
+    <i class="material-icons" style="font-size: 14px">shopping_cart</i>
+    <span class="cart-counter" style="font-size: 14px;">({{count}})</span>
+    Checkout
+  </a>
+</div>

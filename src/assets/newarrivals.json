@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Zoom Pegasus Turbo 2 Mens Running Shoes",
+    "brand": "Nike",
+    "thumbnail": "./assets/product-images/thumbnail/nike-zoom-pegasus-turbo-2-mens-running-shoes.jpg",
+    "thumbnailMed": "./assets/product-images/450/nike-zoom-pegasus-turbo-2-mens-running-shoes.jpg",
+    "image": "./assets/product-images/nike-zoom-pegasus-turbo-2-mens-running-shoes.jpg",
+    "price": 249.99,
+    "description": "Turbocharge your run with the lighter, more streamlined Nike Zoom Pegasus Turbo 2 Men's Running Shoes. The featherlight lofted mesh and synthetic upper is breathable to the point of appearing translucent. The ZoomX midsole keeps the lightweight design at the forefront while delivering the greatest energy return yet. The angled heel helps to smooth transitions, so you feel lighter on your feet and sprightly through your long distance run."
+  },
+  {
+    "id": 2,
+    "name": "Nike Mens Rise 365 Hybrid Running Tee",
+    "brand": "Nike",
+    "thumbnail": "./assets/product-images/thumbnail/nike-mens-rise-365-hybrid-running-tee.jpg",
+    "thumbnailMed": "./assets/product-images/450/nike-mens-rise-365-hybrid-running-tee.jpg",
+    "image": "./assets/product-images/nike-mens-rise-365-hybrid-running-tee.jpg",
+    "price": 69.99,
+    "description": "The Nike Men's Breathe Rise 365 Running Tee is designed to maximise comfort during your daily jog. Made with Nike Breathe fabric, the Rise 365 Tee is highly breathable, with mesh panels to improve airflow as you push for that new personal best. Got the extra mile in the Nike Men's Breathe 365 Running Tee."
+  },
+  {
+    "id": 3,
+    "name": "Brooks Levitate 3 Mens Running Shoes",
+    "brand": "Brooks",
+    "thumbnail": "./assets/product-images/thumbnail/brooks-levitate-3-mens-running-shoes.jpg",
+    "thumbnailMed": "./assets/product-images/450/brooks-levitate-3-mens-running-shoes.jpg",
+    "image": "./assets/product-images/brooks-levitate-3-mens-running-shoes.jpg",
+    "price": 249.99,
+    "description": "The sleek design of the Brooks Levitate 3 Running Shoes make them ideal for your daily, runs, jogs or walks; whatever pace you choose to get active. The flat-knit upper has been updated with an integrated tongue to deliver a sock-like fit and features reflective detailing for low-light visibility. Underfoot DNA AMP offers the best in energy return to keep a spring in your step and the arrow-point outsole speeds transitions for a smooth-running feeling."
+  },
+  {
+    "id": 4,
+    "name": "Under Armour Mens Streaker Singlet",
+    "brand": "Under Armour",
+    "thumbnail": "./assets/product-images/thumbnail/under-armour-mens-streaker-singlet.jpg",
+    "thumbnailMed": "./assets/product-images/450/under-armour-mens-streaker-singlet.jpg",
+    "image": "./assets/product-images/under-armour-mens-streaker-singlet.jpg",
+    "price": 44.99,
+    "description": "The Under Armour Mens Streaker Singlet is the ultimate comfortable workout top. Made from UA Microthread fabric for lightweight performance, this tank wicks sweat away from your skin and dries fast to hold off fatigue. For premium performance this singlet won't chafe and stretches without carrying moisture."
+  }
+]

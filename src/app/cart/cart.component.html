@@ -1,0 +1,55 @@
+<h3>Cart</h3>
+<!-- <div><a routerLink="/shipping">Shipping Prices</a></div> -->
+
+<div class="cart-item flexbox flex" *ngFor="let item of items;index as i">
+  <div class=" flexbox row flex-center" *ngIf="item; else elseBlock">
+    <a routerLink="#">
+
+    <!-- Col 1 -->
+    <div class="product__image flexbox flex flex-end padding-right2" style="width: 183px">
+      <img src="{{item.thumbnail}}" alt="">
+    </div></a>
+
+    <!-- Col 2 -->
+    <div class=" flexbox flex column">
+      <div class="flexbox column flex2 flex-end">{{ item.name }} </div> 
+      <div class="flexbox flex">{{ item.price | currency }} </div> 
+      <div class="remove-item flexbox flex2 row flex-start " (click)="removeItem(i)">Remove <i class="material-icons" style="font-size: 14px">remove_circle</i></div>
+      <hr>
+    </div>
+
+  </div>
+</div>
+
+<div class=" flexbox flex row flex-end margin-top" *ngIf="count; else elseBlock">
+
+  <div class="flexbox flex">&nbsp;</div>
+  <div class="flexbox column flex3 padding-left2">
+    <div class="total "><span class="t-med">Total:</span> {{ total | currency}}</div>
+    <div class="flexbox column flex-start">
+
+      <p class="cart__count" *ngIf="count > 1; else single">Cart items: {{ count }}</p> 
+      <ng-template #single><p>Cart item: {{ count }}</p> </ng-template>
+     
+      <div><button class="button" (click)="clear()">Clear Cart</button></div>
+    </div>
+  </div>
+
+</div>
+
+<ng-template #elseBlock>
+  <div class="section-break flexbox flex flex-center margin-top5">You have no items on your cart.</div>
+</ng-template>
+  
+
+<!-- <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" formControlName="name">
+  </div>
+  <div>
+    <label for="address">Address</label>
+      <input type="text" id="address" formControlName="address">
+    </div>
+  <button class="button" type="submit">Purchase</button>
+</form> -->

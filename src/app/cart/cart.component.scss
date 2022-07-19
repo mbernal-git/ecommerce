@@ -1,0 +1,19 @@
+.remove-item {
+  cursor: pointer;
+  i {
+    color: red;
+  }
+
+  i:hover {
+    color:rgb(139,0,0);
+  }
+}
+
+.button {
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgba(0,0,0,0.1);
+}

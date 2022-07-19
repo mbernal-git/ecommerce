@@ -1,0 +1,17 @@
+<h2 class="heading">New arrivals</h2>
+<div class="products-div flexbox section-break flex-even">
+  <div *ngFor="let product of newarrivals" class="product flexbox column">
+    <a [routerLink]="['/products/new-arrivals', (product.id - 1)]">
+      <div class="product__image">
+        <img src="{{product.thumbnailMed}}" alt="">
+      </div>
+      <div class="product__caption">
+        <p class="product__name">{{product.name}} </p>
+      </div>
+    </a>
+    <div class="product__price">{{product.price | currency}}</div>
+  </div>
+</div>
+<div class="cta">
+  <a [routerLink]="['/products']">Browse products</a>
+</div>

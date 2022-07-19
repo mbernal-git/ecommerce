@@ -1,0 +1,61 @@
+/* BASELINE*/
+
+// BLOCK ELEMENT
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1, h2 {
+  font-weight: bold;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+
+}
+
+
+// VIEWPORT
+@mixin atSmall {
+  @media only screen and (max-width: 529px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media only screen and (min-width: 530px) and (max-width: 959px) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media only screen and (min-width: 960px) {
+    @content;
+  }
+}

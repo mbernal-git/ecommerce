@@ -1,0 +1,309 @@
+/* UTILITY CLASSES */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.border-on {
+  border: 1px solid black;
+}
+
+.h-padding {
+  padding: 0 1rem;
+}
+
+.padding-right2 {
+  padding-right: 2em;
+}
+
+.padding-left2 {
+  padding-left: 2em;
+}
+
+.padding {
+  padding: 2em;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
+.margin-bottom2 {
+  margin-bottom: 2em;
+}
+
+.margin-bottom3 {
+  margin-bottom: 3em;
+}
+
+.margin-bottom4 {
+  margin-bottom: 4em;
+}
+
+.margin-top {
+  margin-top: 1em;
+}
+
+.margin-top2 {
+  margin-top: 2em;
+}
+
+.margin-top3 {
+  margin-top: 3em;
+}
+
+.margin-top4 {
+  margin-top: 4em;
+}
+
+.margin-top5 {
+  margin-top: 5em;
+}
+
+.inline-block {
+  display: inline-block;
+} 
+
+.flexbox {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flex {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+
+.flex3 {
+  flex: 3;
+} 
+
+.flex4 {
+  flex: 4;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-even {
+  justify-content: space-evenly;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.align-items-c {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+
+.two-cols {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col {
+  width: 49.7%;
+}
+
+.section-break {
+  padding: 2em 0;
+}
+
+.bg-black {
+  background: black;
+}
+
+.bg-white {
+  background: white;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-blue {
+  background: blue;
+}
+
+.bg-yellow {
+  background: yellow;
+}
+
+.bg-green {
+  background: green;
+}
+
+.bg-pink {
+  background: pink;
+}
+
+.bg-gray {
+  background: gray;
+}
+
+.nu {
+  text-decoration: none;
+}
+
+.nu:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  padding: .5em 0;
+  
+  img {
+    width: 100%;
+  }
+
+}
+
+.front-headline {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.50);
+  font-size: 32px;
+  opacity: 0;
+
+  a {
+    font-size: 16px;
+  }
+
+}
+
+.shadow {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.headline {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 450;
+}
+
+.heading {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.t-med {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.ucase {
+  text-transform: uppercase;
+}
+
+.lcase {
+  text-transform: lowercase;
+}
+
+.tcase {
+  text-transform: capitalize;
+}
+
+.hide {
+  display: none;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.gray {
+  color: gray;
+}
+
+.red {
+  color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cta {
+  margin: .5em auto 0 auto;
+  a {
+    display:inline-block;
+    border: 1px solid gray;
+    text-transform: uppercase;
+    text-align: center;
+    padding: .9em 1.4em;
+    font-weight: 450;
+    background: white;
+    min-width: 220px;
+  }
+  a:hover {
+    text-decoration: none;
+    background: black;
+    color: white;
+  }
+}
+
+.breadcrumbs {
+  margin-bottom: 3em;
+}

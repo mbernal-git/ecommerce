@@ -1,0 +1,12 @@
+<div class="recent-post">
+  <h2 class="heading section-break">Recent post</h2>
+  <span *ngIf="errorMsg">{{errorMsg}}</span>
+  <div *ngFor="let blog of blogs | slice:0:2; index as blogId;" class="margin-bottom2">
+    <h3 class="blog-title margin-bottom">{{ blog.title }}</h3>
+    <div class="margin-bottom">{{ blog.body }}</div>
+    <a [routerLink]="['#']" class="more-link">Read more</a>
+  </div>
+  <div class="cta t-center">
+    <a [routerLink]="['/blog']">More posts</a>
+  </div>
+</div>
